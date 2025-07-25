@@ -1,19 +1,16 @@
 <html lang="es">
-<head>
-  <meta charset="utf-8" />
-  <meta content="width=device-width, initial-scale=1" name="viewport" />
-  <title>Eco Consciente</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand&display=swap"
-    rel="stylesheet"
-  />
-  <link
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    rel="stylesheet"
-  />
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Eco Consciente
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&amp;family=Quicksand&amp;display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
   <style>
-    body {
+   body {
       font-family: "Quicksand", sans-serif;
       background: linear-gradient(135deg, #f0cc8a 0%, #d9b25a 100%);
       min-height: 100vh;
@@ -141,351 +138,252 @@
       z-index: 1;
     }
   </style>
-</head>
-<body class="flex flex-col min-h-screen">
+ </head>
+ <body class="flex flex-col min-h-screen">
   <header class="bg-[#5ca75c] shadow-md sticky top-0 z-30 h-18">
-    <div
-      class="max-w-5xl mx-auto flex items-center justify-between p-4 sm:p-6 relative h-18"
-      style="height:72px"
-    >
-      <a href="#inicio" class="pacifico text-[#1a3a2a] text-4xl flex items-center gap-2 select-none">
-        Eco
-        <span
-          class="w-16 h-16 rounded-full bg-[#5ca75c] border-4 border-[#3a7a3a] flex items-center justify-center relative z-10"
-        >
-          <img
-            alt="Logo of a red panda sitting, stylized, circular background"
-            class="w-14 h-14 object-contain"
-            src="https://storage.googleapis.com/a1aa/image/e7ce4ef7-edb2-40cf-a1d9-8b1f2602bb31.jpg"
-            width="56"
-            height="56"
-          />
-        </span>
-        - consciente
-      </a>
-
-      <!-- Hamburger Menu Button -->
-      <button
-        id="menu-btn"
-        aria-label="Abrir menú"
-        class="sm:hidden text-[#1a3a2a] focus:outline-none z-40"
-      >
-        <i class="fas fa-bars fa-2x"></i>
-      </button>
-
-      <!-- Navigation Menu -->
-      <nav
-        id="menu"
-        class="hidden sm:flex sm:items-center sm:gap-10 absolute sm:static top-full left-0 w-full sm:w-auto bg-[#5ca75c] sm:bg-transparent rounded-b-lg sm:rounded-none shadow-lg sm:shadow-none z-20"
-      >
-        <a
-          href="#inicio"
-          class="block px-6 py-3 text-[#1a3a2a] font-semibold hover:text-white transition sm:px-0 sm:py-0"
-          >Inicio</a
-        >
-        <a
-          href="#marketing"
-          class="block px-6 py-3 text-[#1a3a2a] font-semibold hover:text-white transition sm:px-0 sm:py-0"
-          >Marketing Sostenible</a
-        >
-        <a
-          href="#diferencias"
-          class="block px-6 py-3 text-[#1a3a2a] font-semibold hover:text-white transition sm:px-0 sm:py-0"
-          >Diferencias</a
-        >
-        <a
-          href="#contacto"
-          class="block px-6 py-3 text-[#1a3a2a] font-semibold hover:text-white transition sm:px-0 sm:py-0"
-          >Contacto</a
-        >
-      </nav>
-    </div>
+   <div class="max-w-5xl mx-auto flex items-center justify-between p-4 sm:p-6 relative h-18" style="height:72px">
+    <a class="pacifico text-[#1a3a2a] text-4xl flex items-center gap-2 select-none" href="#inicio">
+     Eco
+     <span class="w-16 h-16 rounded-full bg-[#5ca75c] border-4 border-[#3a7a3a] flex items-center justify-center relative z-10">
+      <img alt="Logo of a red panda sitting, stylized, circular background" class="w-14 h-14 object-contain" height="56" src="https://storage.googleapis.com/a1aa/image/e7ce4ef7-edb2-40cf-a1d9-8b1f2602bb31.jpg" width="56"/>
+     </span>
+     - consciente
+    </a>
+    <button aria-label="Abrir menú" class="sm:hidden text-[#1a3a2a] focus:outline-none z-40" id="menu-btn">
+     <i class="fas fa-bars fa-2x">
+     </i>
+    </button>
+    <nav class="hidden sm:flex sm:items-center sm:gap-10 absolute sm:static top-full left-0 w-full sm:w-auto bg-[#5ca75c] sm:bg-transparent rounded-b-lg sm:rounded-none shadow-lg sm:shadow-none z-20" id="menu">
+     <a class="block px-6 py-3 text-[#1a3a2a] font-semibold hover:text-white transition sm:px-0 sm:py-0" href="#inicio">
+      Inicio
+     </a>
+     <a class="block px-6 py-3 text-[#1a3a2a] font-semibold hover:text-white transition sm:px-0 sm:py-0" href="#marketing">
+      Marketing Sostenible
+     </a>
+     <a class="block px-6 py-3 text-[#1a3a2a] font-semibold hover:text-white transition sm:px-0 sm:py-0" href="#diferencias">
+      Diferencias
+     </a>
+     <a class="block px-6 py-3 text-[#1a3a2a] font-semibold hover:text-white transition sm:px-0 sm:py-0" href="#contacto">
+      Contacto
+     </a>
+    </nav>
+   </div>
   </header>
-
   <main class="max-w-5xl mx-auto flex-grow p-6 space-y-12">
-    <!-- Hero Section -->
-    <section
-      id="inicio"
-      class="bg-white bg-opacity-90 rounded-3xl p-10 shadow-xl flex flex-col md:flex-row items-center gap-8 reveal"
-      style="margin-top: 5rem;"
-    >
-      <div class="md:w-1/2 flex flex-col justify-center h-full">
-        <h2 class="pacifico text-6xl text-[#2f5d2f] mb-6 select-none leading-tight">
-          Bienvenido a Eco Consciente
-        </h2>
-        <p class="text-xl text-[#1a3a2a] leading-relaxed max-w-xl">
-          Inspiramos a marcas y personas a adoptar un enfoque respetuoso con el
-          medio ambiente a través del
-          <span class="font-bold text-green-700">MARKETING SOSTENIBLE</span> y
-          <span class="font-bold text-green-700">MARKETING VERDE</span>. ¡Únete
-          al cambio responsable!
-        </p>
-        <a href="#contacto" class="btn-primary mt-10 w-max inline-block shadow-lg hover:shadow-xl"
-          >Contáctanos</a
-        >
-      </div>
-      <div class="md:w-1/2 flex flex-col justify-center bg-green-50 rounded-2xl p-6 shadow-lg card">
-        <h3 class="pacifico text-3xl text-green-800 mb-4 select-none text-center">
-          Nuestro Compromiso
-        </h3>
-        <p class="text-[#1a3a2a] leading-relaxed mb-4 text-center">
-          En Eco Consciente, creemos en un futuro donde la sostenibilidad y la
-          creatividad van de la mano. Nuestro logo, inspirado en la naturaleza y
-          la innovación, simboliza el equilibrio perfecto entre ambos.
-        </p>
-        <ul class="list-disc list-inside text-left text-green-700 max-w-md mx-auto space-y-2">
-          <li>Promovemos prácticas responsables y éticas</li>
-          <li>Fomentamos la educación ambiental</li>
-          <li>Apoyamos la innovación ecológica</li>
-          <li>Impulsamos el compromiso social y ambiental</li>
-        </ul>
-      </div>
-    </section>
+   <section class="bg-white bg-opacity-90 rounded-3xl p-10 shadow-xl flex flex-col md:flex-row items-center gap-8 reveal" id="inicio" style="margin-top: 5rem;">
+    <div class="md:w-1/2 flex flex-col justify-center h-full">
+     <h2 class="pacifico text-6xl text-[#2f5d2f] mb-6 select-none leading-tight">
+      ¿Quiénes somos?
+     </h2>
+     <p class="text-xl text-[#1a3a2a] leading-relaxed max-w-xl">
+      Nuestro macroproyecto responde a la necesidad urgente de enfrentar el hiperconsumo y la economía lineal, problemáticas globales que afectan múltiples dimensiones de la vida humana y del planeta. Buscamos comprender los procesos mentales que influyen en las decisiones de consumo para transformar hábitos hacia modelos más sostenibles.
+     </p>
+     <a class="btn-primary mt-10 w-max inline-block shadow-lg hover:shadow-xl" href="#contacto">
+      Contáctanos
+     </a>
+    </div>
+    <div class="md:w-1/2 flex flex-col justify-center bg-green-50 rounded-2xl p-6 shadow-lg card">
+     <h3 class="pacifico text-3xl text-green-800 mb-4 select-none text-center">
+      Nuestro objetivo
+     </h3>
+     <p class="text-[#1a3a2a] leading-relaxed mb-4 text-center">
+      Promover una cultura de
+circularidad en la economía con
+el propósito que se puedan
+transformar las conductas
+propias del hiperconsumo y la
+economía de materiales.
+     </p>
+    </div>
+   </section>
+   <section class="grid grid-cols-1 md:grid-cols-3 gap-8 reveal" id="marketing">
+    <div class="card bg-white bg-opacity-90 rounded-3xl p-6 shadow-lg flex flex-col items-center text-center">
+     <img alt="Yellow light bulb icon with rays" class="w-14 h-14 mb-4" height="56" src="https://storage.googleapis.com/a1aa/image/3f35f425-4dbd-4ae7-d4e2-26ffcbf2e056.jpg" width="56"/>
+     <h3 class="pacifico text-3xl text-green-800 mb-3 select-none">
+     Misión de Eco-Consciente
+     </h3>
+     <p class="text-[#1a3a2a] leading-relaxed mb-4">
+    
+Promover la transformación de los hábitos de consumo hacia prácticas responsables y sostenibles, impulsando la economía circular y el consumo consciente a través de estrategias de marketing verde y acciones de concientización en nuestro entorno. Nos proponemos inspirar el cambio desde lo cotidiano, conectando mente, acción y comunidad para generar un impacto ambiental y social duradero.
 
-    <!-- Marketing Sostenible Section -->
-    <section
-      id="marketing"
-      class="grid grid-cols-1 md:grid-cols-3 gap-8 reveal"
-    >
-      <div
-        class="card bg-white bg-opacity-90 rounded-3xl p-6 shadow-lg flex flex-col items-center text-center"
-      >
-        <img
-          alt="Yellow light bulb icon with rays"
-          src="https://storage.googleapis.com/a1aa/image/3f35f425-4dbd-4ae7-d4e2-26ffcbf2e056.jpg"
-          class="w-14 h-14 mb-4"
-          width="56"
-          height="56"
-        />
-        <h3 class="pacifico text-3xl text-green-800 mb-3 select-none">
-          ¿Qué es el Marketing Sostenible?
-        </h3>
-        <p class="text-[#1a3a2a] leading-relaxed mb-4">
-          Busca satisfacer las necesidades de los consumidores a largo plazo,
-          respetando el entorno y la sociedad.
-        </p>
-        <ul class="list-disc list-inside text-left text-[#2f4f2f] mb-4 space-y-1">
-          <li>Se basa en prácticas como producción responsable</li>
-          <li>Ética empresarial y transparencia</li>
-          <li>Educación ambiental al consumidor</li>
-        </ul>
-        <p class="font-semibold text-green-700">
-          Ejemplo: Una empresa que vende ropa hecha con telas recicladas y
+     </p>
+     <ul class="list-disc list-inside text-left text-[#2f4f2f] mb-4 space-y-1">
+      <li>
+       Se basa en prácticas como producción responsable
+      </li>
+      <li>
+       Ética empresarial y transparencia
+      </li>
+      <li>
+       Educación ambiental al consumidor
+      </li>
+     </ul>
+     <p class="font-semibold text-green-700">
+      Ejemplo: Una empresa que vende ropa hecha con telas recicladas y
           promueve campañas para reducir el consumo innecesario.
-        </p>
-      </div>
-      <div
-        class="card bg-white bg-opacity-90 rounded-3xl p-6 shadow-lg flex flex-col justify-center"
-      >
-        <h3 class="pacifico text-3xl text-green-800 mb-4 select-none text-center">
-          Diferencias clave
-        </h3>
-        <p class="text-[#1a3a2a] mb-4 leading-relaxed">
-          En Eco Conscientee creemos que cada acción cuenta. El logo de nuestro
+     </p>
+    </div>
+    <div class="card bg-white bg-opacity-90 rounded-3xl p-6 shadow-lg flex flex-col justify-center">
+     <h3 class="pacifico text-3xl text-green-800 mb-4 select-none text-center" id="diferencias">
+      Diferencias clave
+     </h3>
+     <p class="text-[#1a3a2a] mb-4 leading-relaxed">
+      En Eco Conscientee creemos que cada acción cuenta. El logo de nuestro
           panda rojo representa el equilibrio entre lo natural y lo creativo.
           El bombillo es símbolo de ideas conscientes, innovación ecológica y
           compromiso.
-        </p>
-        <div
-          class="grid grid-cols-2 gap-2 text-center text-sm font-semibold text-[#5c3a00] bg-[#f0bb4a] rounded-lg shadow-inner"
-        >
-          <div class="border border-[#d9b25a] p-3 bg-[#f3c94a]">Marketing Verde</div>
-          <div class="border border-[#d9b25a] p-3 bg-[#f3c94a]">
-            Marketing Sostenible
-          </div>
-          <div class="border border-[#d9b25a] p-3 font-normal text-[#3a3a00]">
-            Enfocado en el producto ecológico
-          </div>
-          <div class="border border-[#d9b25a] p-3 font-normal text-[#3a3a00]">
-            Enfocado en toda la estrategia empresarial
-          </div>
-          <div class="border border-[#d9b25a] p-3 font-normal text-[#3a3a00]">
-            A corto a mediano plazo
-          </div>
-          <div class="border border-[#d9b25a] p-3 font-normal text-[#3a3a00]">
-            A largo plazo
-          </div>
-        </div>
+     </p>
+     <div class="grid grid-cols-2 gap-2 text-center text-sm font-semibold text-[#5c3a00] bg-[#f0bb4a] rounded-lg shadow-inner">
+      <div class="border border-[#d9b25a] p-3 bg-[#f3c94a]">
+       Marketing Verde
       </div>
-      <div
-        class="card bg-white bg-opacity-90 rounded-3xl p-6 shadow-lg flex flex-col items-center text-center"
-      >
-        <i class="fas fa-seedling text-green-700 text-6xl mb-4"></i>
-        <h3 class="pacifico text-3xl text-green-800 mb-3 select-none">
-          Beneficios del Marketing Verde
-        </h3>
-        <p class="text-[#1a3a2a] leading-relaxed mb-4 max-w-md">
-          Adoptar el marketing verde no solo ayuda al planeta, sino que también
-          mejora la imagen de marca, aumenta la lealtad del cliente y abre nuevas
-          oportunidades de mercado.
-        </p>
-        <ul class="list-disc list-inside text-left text-[#2f4f2f] space-y-1 max-w-md mx-auto">
-          <li>Reducción del impacto ambiental</li>
-          <li>Mejora de la reputación corporativa</li>
-          <li>Fidelización de clientes conscientes</li>
-          <li>Innovación y diferenciación en el mercado</li>
-        </ul>
+      <div class="border border-[#d9b25a] p-3 bg-[#f3c94a]">
+       Marketing Sostenible
       </div>
-    </section>
-
-    <!-- New Section with images and dynamic info -->
-    <section class="space-y-20 max-w-5xl mx-auto mt-12">
-      <!-- Item 1: Image left, text right -->
-      <div class="flex flex-col md:flex-row items-center gap-6">
-        <img
-          alt="Imagen representativa 1: naturaleza y sostenibilidad"
-          class="info-image"
-          height="220"
-          src="https://storage.googleapis.com/a1aa/image/f97902a4-5d6d-47cf-ed6d-98e2f224b819.jpg"
-          width="380"
-        />
-        <div class="md:w-1/2 info-text">
-          <h3 class="pacifico text-3xl text-green-800 mb-3 select-none">
-            Conservación Ambiental
-          </h3>
-          <p class="text-lg leading-relaxed">
-            Trabajamos para proteger los ecosistemas naturales, promoviendo
-            prácticas que minimizan el impacto ambiental y fomentan la
-            biodiversidad.
-          </p>
-        </div>
+      <div class="border border-[#d9b25a] p-3 font-normal text-[#3a3a00]">
+       Enfocado en el producto ecológico
       </div>
-      <!-- Item 2: Image right, text left -->
-      <div class="flex flex-col md:flex-row items-center gap-6 md:flex-row-reverse">
-        <img
-          alt="Imagen representativa 2: energías renovables"
-          class="info-image"
-          height="220"
-          src="https://storage.googleapis.com/a1aa/image/25922efd-2731-4981-cb5e-a0ef5fd14450.jpg"
-          width="380"
-        />
-        <div class="md:w-1/2 info-text">
-          <h3 class="pacifico text-3xl text-green-800 mb-3 select-none">
-            Energías Renovables
-          </h3>
-          <p class="text-lg leading-relaxed">
-            Fomentamos el uso de fuentes de energía limpias y renovables para
+      <div class="border border-[#d9b25a] p-3 font-normal text-[#3a3a00]">
+       Enfocado en toda la estrategia empresarial
+      </div>
+      <div class="border border-[#d9b25a] p-3 font-normal text-[#3a3a00]">
+       A corto a mediano plazo
+      </div>
+      <div class="border border-[#d9b25a] p-3 font-normal text-[#3a3a00]">
+       A largo plazo
+      </div>
+     </div>
+    </div>
+    <div class="card bg-white bg-opacity-90 rounded-3xl p-6 shadow-lg flex flex-col items-center text-center">
+     <i class="fas fa-seedling text-green-700 text-6xl mb-4">
+     </i>
+     <h3 class="pacifico text-3xl text-green-800 mb-3 select-none">
+      Visión
+     </h3>
+     <p class="text-[#1a3a2a] leading-relaxed mb-4 max-w-md">
+      
+Ser referente en la difusión y adopción de una cultura eco-consciente, contribuyendo a la construcción de una sociedad más justa y sostenible mediante el conocimiento, la innovación y el compromiso ético de las nuevas generaciones. Aspiramos a consolidarnos como un modelo replicable de transformación local con proyección global, capaz de movilizar comunidades hacia una nueva forma de vivir, consumir y convivir con el planeta.
+     </p>
+     <ul class="list-disc list-inside text-left text-[#2f4f2f] space-y-1 max-w-md mx-auto">
+      <li>
+       Reducción del impacto ambiental
+      </li>
+      <li>
+       Mejora de la reputación corporativa
+      </li>
+      <li>
+       Fidelización de clientes conscientes
+      </li>
+      <li>
+       Innovación y diferenciación en el mercado
+      </li>
+     </ul>
+    </div>
+   </section>
+   <section class="space-y-20 max-w-5xl mx-auto mt-12">
+    <div class="flex flex-col md:flex-row items-center gap-6">
+     <img alt="Imagen representativa 1: naturaleza y sostenibilidad, bosque verde con luz solar filtrándose entre árboles" class="info-image" height="220" src="https://storage.googleapis.com/a1aa/image/308d725c-5dbe-4c38-215d-e4b3ab97a9fe.jpg" width="380"/>
+     <div class="md:w-1/2 info-text">
+      <h3 class="pacifico text-3xl text-green-800 mb-3 select-none" style="">
+       Económico
+      </h3>
+      <p class="text-lg leading-relaxed" style="">
+       Ofrece alternativas de consumo responsable que permiten optimizar el uso de recursos y disminuir el desperdicio. Además, estimula modelos económicos sostenibles y accesibles, basados en la innovación, el emprendimiento verde y la producción consciente.
+      </p>
+     </div>
+    </div>
+    <div class="flex flex-col md:flex-row items-center gap-6 md:flex-row-reverse">
+     <img alt="Imagen representativa 2: energías renovables, paneles solares y turbinas eólicas en paisaje verde" class="info-image" height="220" src="https://storage.googleapis.com/a1aa/image/25a623f9-9a32-4633-1b63-7c7c11bb1388.jpg" width="380"/>
+     <div class="md:w-1/2 info-text">
+      <h3 class="pacifico text-3xl text-green-800 mb-3 select-none">
+       Energías Renovables
+      </h3>
+      <p class="text-lg leading-relaxed">
+       Fomentamos el uso de fuentes de energía limpias y renovables para
             reducir la huella de carbono y avanzar hacia un futuro más
             sostenible.
-          </p>
-        </div>
-      </div>
-      <!-- Item 3: Image left, text right -->
-      <div class="flex flex-col md:flex-row items-center gap-6">
-        <img
-          alt="Imagen representativa 3: educación ambiental"
-          class="info-image"
-          height="220"
-          src="https://storage.googleapis.com/a1aa/image/fa77c087-3607-4d96-83bd-e076d2c00c98.jpg"
-          width="380"
-        />
-        <div class="md:w-1/2 info-text">
-          <h3 class="pacifico text-3xl text-green-800 mb-3 select-none">
-            Educación Ambiental
-          </h3>
-          <p class="text-lg leading-relaxed">
-            Impulsamos programas educativos para crear conciencia sobre la
+      </p>
+     </div>
+    </div>
+    <div class="flex flex-col md:flex-row items-center gap-6">
+     <img alt="Imagen representativa 3: educación ambiental, niños aprendiendo en aula al aire libre con plantas y libros" class="info-image" height="220" src="https://storage.googleapis.com/a1aa/image/a8583681-c451-44f9-5d44-8fa29ec62448.jpg" width="380"/>
+     <div class="md:w-1/2 info-text">
+      <h3 class="pacifico text-3xl text-green-800 mb-3 select-none">
+       Educación Ambiental
+      </h3>
+      <p class="text-lg leading-relaxed">
+       Impulsamos programas educativos para crear conciencia sobre la
             importancia de cuidar nuestro planeta y adoptar hábitos sostenibles
             en la vida diaria.
-          </p>
-        </div>
+      </p>
+     </div>
+    </div>
+   </section>
+   <section class="bg-white bg-opacity-90 rounded-3xl p-10 shadow-xl reveal" id="contacto">
+    <h2 class="pacifico text-4xl text-green-800 mb-8 text-center select-none">
+     Contacto
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-4xl mx-auto text-[#1a3a2a]">
+     <div class="card p-6 rounded-2xl shadow-md border border-green-300 hover:shadow-lg transition cursor-pointer" style="">
+      <div class="flex items-center gap-4 mb-4">
+       <div class="bg-green-200 p-3 rounded-full text-green-700 text-2xl flex items-center justify-center">
+        <i class="fas fa-phone-alt">
+        </i>
+       </div>
+       <h3 class="pacifico text-2xl font-semibold">
+        ¿Tienes un emprendimiento?
+       </h3>
       </div>
-    </section>
-
-    <!-- Contacto Section -->
-    <section
-      id="contacto"
-      class="bg-white bg-opacity-90 rounded-3xl p-10 shadow-xl reveal"
-    >
-      <h2 class="pacifico text-4xl text-green-800 mb-8 text-center select-none">
-        Contacto
-      </h2>
-      <div
-        class="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-4xl mx-auto text-[#1a3a2a]"
-      >
-        <div
-          class="card p-6 rounded-2xl shadow-md border border-green-300 hover:shadow-lg transition cursor-pointer"
-        >
-          <div class="flex items-center gap-4 mb-4">
-            <div
-              class="bg-green-200 p-3 rounded-full text-green-700 text-2xl flex items-center justify-center"
-            >
-              <i class="fas fa-phone-alt"></i>
-            </div>
-            <h3 class="pacifico text-2xl font-semibold">¿Tienes un emprendimiento?</h3>
-          </div>
-          <p class="text-lg leading-relaxed">
-            ¿Quieres hacerlo sostenible? Estamos aquí para ayudarte a crecer con
+      <p class="text-lg leading-relaxed">
+       ¿Quieres hacerlo sostenible? Estamos aquí para ayudarte a crecer con
             responsabilidad ambiental.
-          </p>
-          <a
-            href="#contacto-form"
-            class="btn-primary mt-6 inline-block self-start"
-            >Escríbenos</a
-          >
-        </div>
-        <div
-          class="card p-6 rounded-2xl shadow-md border border-green-300 hover:shadow-lg transition"
-        >
-          <div class="flex items-center gap-4 mb-4">
-            <div
-              class="bg-green-200 p-3 rounded-full text-green-700 text-2xl flex items-center justify-center"
-            >
-              <i class="fas fa-envelope"></i>
-            </div>
-            <h3 class="pacifico text-2xl font-semibold">Contáctanos</h3>
-          </div>
-          <p class="text-lg font-semibold mb-2">ecoconscientee@ejemplo.com</p>
-          <p class="text-lg font-semibold">Medellín, Colombia</p>
-          <form
-            id="contacto-form"
-            class="mt-6 flex flex-col gap-4"
-            onsubmit="event.preventDefault(); alert('Gracias por contactarnos!'); this.reset();"
-          >
-            <input
-              type="text"
-              name="nombre"
-              placeholder="Tu nombre"
-              required
-              class="border border-green-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-green-500"
-            />
-            <input
-              type="email"
-              name="email"
-              placeholder="Tu correo electrónico"
-              required
-              class="border border-green-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-green-500"
-            />
-            <textarea
-              name="mensaje"
-              rows="4"
-              placeholder="Tu mensaje"
-              required
-              class="border border-green-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-green-500 resize-none"
-            ></textarea>
-            <button type="submit" class="btn-primary w-full">
-              Enviar mensaje
-            </button>
-          </form>
-        </div>
+      </p>
+      <a class="btn-primary mt-6 inline-block self-start" href="#contacto-form">
+       Escríbenos
+      </a>
+      <a class="btn-primary mt-4 inline-flex items-center gap-2 self-start" href="https://www.instagram.com/ecoconsciente" target="_blank" rel="noopener noreferrer" aria-label="Visita nuestro Instagram">
+       <i class="fab fa-instagram text-white text-lg"></i> Instagram
+      </a>
+     </div>
+     <div class="card p-6 rounded-2xl shadow-md border border-green-300 hover:shadow-lg transition">
+      <div class="flex items-center gap-4 mb-4">
+       <div class="bg-green-200 p-3 rounded-full text-green-700 text-2xl flex items-center justify-center">
+        <i class="fas fa-envelope">
+        </i>
+       </div>
+       <h3 class="pacifico text-2xl font-semibold">
+        Contáctanos
+       </h3>
       </div>
-    </section>
+      <p class="text-lg font-semibold mb-2">
+       ecoconscientee@ejemplo.com
+      </p>
+      <p class="text-lg font-semibold">
+       Medellín, Colombia
+      </p>
+      <form class="mt-6 flex flex-col gap-4" id="contacto-form" onsubmit="event.preventDefault(); alert('Gracias por contactarnos!'); this.reset();">
+       <input class="border border-green-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-green-500" name="nombre" placeholder="Tu nombre" required="" type="text"/>
+       <input class="border border-green-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-green-500" name="email" placeholder="Tu correo electrónico" required="" type="email"/>
+       <textarea class="border border-green-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-green-500 resize-none" name="mensaje" placeholder="Tu mensaje" required="" rows="4"></textarea>
+       <button class="btn-primary w-full" type="submit">
+        Enviar mensaje
+       </button>
+      </form>
+     </div>
+    </div>
+   </section>
   </main>
-
   <footer class="bg-[#5ca75c] text-[#1a3a2a] text-center py-4 font-semibold select-none">
-    ©️ 2024 Eco Consciente. Todos los derechos reservados.
+   ©️ 2024 Eco Consciente. Todos los derechos reservados.
   </footer>
-
   <script>
-    // Hamburger menu toggle
-    const menuBtn = document.getElementById("menu-btn");
+   const menuBtn = document.getElementById("menu-btn");
     const menu = document.getElementById("menu");
 
     menuBtn.addEventListener("click", () => {
       menu.classList.toggle("hidden");
     });
 
-    // Close menu on link click (mobile)
     document.querySelectorAll("#menu a").forEach((link) => {
       link.addEventListener("click", () => {
         if (window.innerWidth < 640) {
@@ -494,7 +392,6 @@
       });
     });
 
-    // Scroll reveal animation
     function reveal() {
       const reveals = document.querySelectorAll(".reveal");
       for (let i = 0; i < reveals.length; i++) {
@@ -512,5 +409,5 @@
     window.addEventListener("scroll", reveal);
     window.addEventListener("load", reveal);
   </script>
-</body>
+ </body>
 </html>
